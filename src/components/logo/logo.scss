@@ -1,0 +1,23 @@
+.logo {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 15px;
+  text-decoration: none;
+}
+
+.logoIcon {
+  grid-row: 2 span;
+}
+
+.logoTextLarge {
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.logoTextLight {
+  color: #9d9d9d;
+  font-size: 14px;
+  font-weight: 400;
+}
