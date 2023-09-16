@@ -63,4 +63,73 @@ body {
 
 .heroCatalog{
   gap: 35px;
+  padding-top: 30px;
+}
+
+.heroHeader{
+  justify-content: space-between;
+}
+
+.input-reset {
+	-webkit-appearance: none;
+	appearance: none;
+	border: none;
+	border-radius: 0;
+	background-color: #fff;
+  font-family: inherit;
+
+	&::-webkit-search-decoration,
+	&::-webkit-search-cancel-button,
+	&::-webkit-search-results-button,
+	&::-webkit-search-results-decoration {
+		display: none;
+	}
+}
+
+.overlay{
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); 
+  z-index: 10; 
+}
+
+
+.btn {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  width: 100%;
+  padding: 20px 35px;
+  border-radius: 18px;
+  background: #9dd458;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background .3s;
+
+  &:hover{
+    background: lighten(#9dd458, 5%);
+
+    .checkoutBtnIcon{
+      transform: translateX(-5px);
+    }
+  }
+  &:active{
+    transition: background .1s;
+    background: darken(#9dd458, 5%);
+  }
+}
+
+.btnIcon {
+  width: 17px;
+  height: 12px;
+  transform: rotate(180deg);
+  transition: transform .3s;
 }

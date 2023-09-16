@@ -1,0 +1,71 @@
+.cartAside {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  width: 385px;
+  padding: 30px;
+  background: #fff;
+  box-shadow: -10px 4px 24px 0px rgba(0, 0, 0, 0.1);
+}
+
+.cartTop {
+  justify-content: space-between;
+}
+
+.cartAsideTitle {
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.cartItemCatalog {
+  flex: 1 1 auto;
+  overflow: auto;
+}
+
+.checkout {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.checkoutTextBox {
+  display: flex;
+
+  &::after {
+    content: "";
+    position: relative;
+    bottom: 4px;
+    flex-grow: 1;
+    order: 2;
+    margin: 0 10px;
+    border-bottom: 1px dashed #dfdfdf;
+  }
+}
+
+.checkoutTotalPrice,
+.checkoutTaxPrice {
+  order: 3;
+}
+
+.checkoutBtn {
+  display: grid;
+  grid-template-columns: 1fr auto;
+
+  &:hover {
+    .checkoutBtnIcon {
+      transform: translateX(5px);
+    }
+  }
+}
+
+.checkoutBtnIcon {
+  width: 17px;
+  height: 12px;
+  transform: none;
+}

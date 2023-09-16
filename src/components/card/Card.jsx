@@ -7,6 +7,7 @@ import "./card.scss"
 const Card = () => {
   return (
     <article className="card">
+      <a className="cardLink" href='#'></a>
       <button className="cardBtn cardBtn_Favorite btn-reset">
         <svg className="cardIcon cardIcon_Favorite">
           <use xlinkHref="/img/cardSprite.svg#cardFavorite" />
