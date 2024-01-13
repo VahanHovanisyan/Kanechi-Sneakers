@@ -1,43 +1,41 @@
-.cartImg {
+.img {
   margin-right: 20px;
   object-position: 0 -10px;
 }
 
-.cartItem {
+.item {
   padding: 20px;
   border-radius: 20px;
   border: 1px solid #f3f3f3;
   background: #fff;
 }
 
-.cartTitle{
+.title {
   margin: 0;
   margin-bottom: 10px;
 }
 
-.cartTextBox {
+.textBox {
   flex-grow: 1;
   margin-right: 15px;
 }
 
-.cartItemIcon {
-  width: 31px;
-  height: 31px;
-}
-
-.cartPriceNumber {
+.priceNumber {
   color: #000;
   font-size: 14px;
   font-weight: 700;
 }
 
-.cartBtn{
-
+.btn {
 }
 
-.cartItemIcon{
-transition: fill-opacity .3s, stroke-opacity .3s;
-  &:hover{
+.itemIcon {
+  width: 31px;
+  height: 31px;
+  transition:
+    fill-opacity 0.3s,
+    stroke-opacity 0.3s;
+  &:hover {
     fill-opacity: 0.7;
     stroke-opacity: 0.7;
   }

@@ -6,21 +6,17 @@ body {
   background: #e7f6ff;
 }
 
-.wrapper {
+.container {
   max-width: 1170px;
   padding: 0 45px;
   margin: 0 auto;
-  margin-top: 80px;
-  border-radius: 20px 20px 0 0;
-  background: #fff;
-  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.04);
 }
 
 .main {
   padding-top: 40px;
 }
 
-.visually-hidden {
+.visuallyHidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -41,36 +37,28 @@ body {
   font-weight: 700;
 }
 
-.flex-v-center {
+.flexVCenter {
   display: flex;
   align-items: center;
 }
+
 .flex {
   display: flex;
 }
-.list-reset {
+.listReset {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.btn-reset {
+.buttonReset {
   border: none;
   background: transparent;
   padding: 0;
   cursor: pointer;
 }
 
-.heroCatalog{
-  gap: 35px;
-  padding-top: 30px;
-}
-
-.heroHeader{
-  justify-content: space-between;
-}
-
-.input-reset {
+.inputReset {
 	-webkit-appearance: none;
 	appearance: none;
 	border: none;
@@ -88,7 +76,6 @@ body {
 
 .overlay{
   position: fixed;
-  display: none;
   width: 100%;
   height: 100%;
   top: 0;
